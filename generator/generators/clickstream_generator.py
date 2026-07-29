@@ -10,8 +10,7 @@ from .journey_engine import get_random_journey
 def load_sessions():
     path = (
         Path(__file__).resolve().parent.parent
-        / "output"
-        / "sessions"
+        / "data"
         / "sessions.csv"
     )
     return pd.read_csv(path)
@@ -20,7 +19,7 @@ def load_sessions():
 def load_products():
     path = (
         Path(__file__).resolve().parent.parent
-        / "master_data"
+        / "data"
         / "products.csv"
     )
     return pd.read_csv(path)
@@ -64,8 +63,7 @@ def save_clickstream(df):
 
     output_path = (
         Path(__file__).resolve().parent.parent
-        / "output"
-        / "clickstream"
+        / "data"
         / "clickstream.csv"
     )
 

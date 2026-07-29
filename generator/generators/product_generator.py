@@ -67,10 +67,11 @@ def save_products(df):
         Path(__file__)
         .resolve()
         .parent.parent
-        / "master_data"
+        / "data"
         / "products.csv"
     )
 
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_path, index=False)
 
     print(f"✅ Saved {len(df)} products")

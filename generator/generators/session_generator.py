@@ -24,7 +24,7 @@ def load_customers():
         Path(__file__)
         .resolve()
         .parent.parent
-        / "master_data"
+        / "data"
         / "customers.csv"
     )
 
@@ -83,8 +83,7 @@ def save_sessions(df):
         Path(__file__)
         .resolve()
         .parent.parent
-        / "output"
-        / "sessions"
+        / "data"
         / "sessions.csv"
     )
 

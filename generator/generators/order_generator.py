@@ -25,8 +25,7 @@ def load_clickstream():
         Path(__file__)
         .resolve()
         .parent.parent
-        / "output"
-        / "clickstream"
+        / "data"
         / "clickstream.csv"
     )
 
@@ -39,7 +38,7 @@ def load_products():
         Path(__file__)
         .resolve()
         .parent.parent
-        / "master_data"
+        / "data"
         / "products.csv"
     )
 
@@ -110,8 +109,7 @@ def save_orders(df):
         Path(__file__)
         .resolve()
         .parent.parent
-        / "output"
-        / "orders"
+        / "data"
         / "orders.csv"
     )
 
