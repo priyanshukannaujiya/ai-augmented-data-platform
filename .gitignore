@@ -6,3 +6,12 @@ generator/bronze/
 generator/silver/
 generator/gold/
 ~$*.docx
+
+# Security & Secrets
+.env
+*.pem
+.aws/
+
+# Airflow
+airflow/logs/
+airflow/*.db

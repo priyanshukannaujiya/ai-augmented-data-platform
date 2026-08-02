@@ -1,0 +1,23 @@
+services:
+  airflow:
+    build: .
+    container_name: airflow-local
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      # Mount AWS credentials so Airflow can use them
+      - ~/.aws:/opt/airflow/.aws:ro
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+      - AWS_SHARED_CREDENTIALS_FILE=/opt/airflow/.aws/credentials
+      - AWS_CONFIG_FILE=/opt/airflow/.aws/config
+      - AWS_DEFAULT_REGION=eu-north-1
+    command: >
+      bash -c "airflow db migrate &&
+               airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com || true &&
+               airflow scheduler & airflow webserver"
