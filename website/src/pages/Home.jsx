@@ -45,10 +45,12 @@ const Home = () => {
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
       
-      <main className="flex-grow w-full px-4 sm:px-6 lg:px-8 py-10 max-w-article mx-auto">
+      <main id="top" className="flex-grow w-full px-4 sm:px-6 lg:px-8 py-10 max-w-article mx-auto">
         <ArticleHeader />
         
-        <AboutAuthor />
+        <div id="about-author" className="scroll-mt-24">
+          <AboutAuthor />
+        </div>
         
         <article className="prose prose-lg max-w-none prose-blue">
           
@@ -113,7 +115,7 @@ const Home = () => {
             </div>
           </Section>
 
-          <Section title="Medallion Architecture">
+          <Section id="data-engineering" title="Medallion Architecture">
             <div className="space-y-10">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 border-l-4 border-amber-700 pl-4">01 — Bronze Layer</h3>
@@ -203,7 +205,7 @@ producer.flush()`}
             />
           </Section>
 
-          <Section title="Data Transformation with AWS Glue and PySpark">
+          <Section id="aws" title="Data Transformation with AWS Glue and PySpark">
             <p>
               AWS Glue serves as the backbone for distributed ETL processing. We leverage Glue Crawlers 
               to automatically discover schemas and maintain the Data Catalog.
@@ -303,7 +305,7 @@ ORDER BY total_revenue DESC;`}
             </ul>
           </Section>
 
-          <Section title="AI Data Engineering Agent">
+          <Section id="ai-mcp" title="AI Data Engineering Agent">
             <p>
               The most advanced feature of this platform is the AI Data Engineering Agent. By integrating Amazon Bedrock 
               and Anthropic's Claude Haiku 4.5 via the Model Context Protocol (MCP), we give natural language 
@@ -378,6 +380,50 @@ ORDER BY total_revenue DESC;`}
                   <span className="font-bold">Agent Answer:</span> "The product category that generated the highest revenue is Books with $299,034."
                 </div>
               </div>
+            </div>
+          </Section>
+
+          <Section id="projects" title="Other Projects">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+              
+              <a href="https://www.linkedin.com/posts/priyanshu-premchand-kannaujiya-355346262_azure-dataengineering-azuredatafactory-activity-7473348220035702787-_Evd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEB6cnEBWS019f8JNg5R948HFg7-Fbt1LNI" target="_blank" rel="noopener noreferrer" className="block group">
+                <div className="bg-white border border-gray-200 rounded-lg p-6 h-full shadow-sm hover:shadow-md transition-shadow group-hover:border-blue-400">
+                  <div className="flex items-center space-x-2 mb-3">
+                    <span className="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">Azure</span>
+                    <span className="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded">Data Engineering</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    End-to-End Azure Data Engineering Pipeline
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    A comprehensive data pipeline utilizing Azure Data Factory, ADLS Gen2, Databricks, and Synapse Analytics.
+                  </p>
+                  <span className="text-blue-600 text-sm font-semibold flex items-center">
+                    View Project 
+                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </span>
+                </div>
+              </a>
+
+              <a href="https://heypk4-dotcom.github.io/dataenginneringjob-finder/" target="_blank" rel="noopener noreferrer" className="block group">
+                <div className="bg-white border border-gray-200 rounded-lg p-6 h-full shadow-sm hover:shadow-md transition-shadow group-hover:border-blue-400">
+                  <div className="flex items-center space-x-2 mb-3">
+                    <span className="bg-gray-100 text-gray-800 text-xs font-bold px-2 py-1 rounded">React</span>
+                    <span className="bg-gray-100 text-gray-800 text-xs font-bold px-2 py-1 rounded">Web App</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                    Data Engineering Job Finder
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    A dedicated platform to discover and filter Data Engineering opportunities and jobs.
+                  </p>
+                  <span className="text-blue-600 text-sm font-semibold flex items-center">
+                    View Project 
+                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                  </span>
+                </div>
+              </a>
+
             </div>
           </Section>
 

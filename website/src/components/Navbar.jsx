@@ -11,11 +11,11 @@ const Navbar = () => {
         
         <div className="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
           <a href="#" className="hover:text-white transition-colors">Home</a>
-          <a href="#" className="hover:text-white transition-colors">Projects</a>
-          <a href="#" className="hover:text-white transition-colors">Data Engineering</a>
-          <a href="#" className="hover:text-white transition-colors">AWS</a>
-          <a href="#" className="hover:text-white transition-colors">AI & MCP</a>
-          <a href="#" className="hover:text-white transition-colors">About</a>
+          <a href="#projects" className="hover:text-white transition-colors">Projects</a>
+          <a href="#data-engineering" className="hover:text-white transition-colors">Data Engineering</a>
+          <a href="#aws" className="hover:text-white transition-colors">AWS</a>
+          <a href="#ai-mcp" className="hover:text-white transition-colors">AI & MCP</a>
+          <a href="#about-author" className="hover:text-white transition-colors">About</a>
         </div>
         
         <div className="flex space-x-4 text-sm font-medium text-gray-300">

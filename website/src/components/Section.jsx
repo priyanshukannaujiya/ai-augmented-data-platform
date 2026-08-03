@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Section = ({ title, children, noMargin }) => {
+const Section = ({ id, title, children, noMargin }) => {
   return (
-    <section className={`max-w-4xl mx-auto ${noMargin ? '' : 'mb-16'}`}>
+    <section id={id} className={`max-w-4xl mx-auto ${noMargin ? '' : 'mb-16'}`}>
       {title && (
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-500 pb-2 inline-block">
           {title}
