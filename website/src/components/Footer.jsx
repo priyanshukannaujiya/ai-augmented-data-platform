@@ -19,7 +19,7 @@ const Footer = () => {
         <div>
           <h4 className="font-bold mb-4 uppercase text-sm text-gray-300 tracking-wider">Resources</h4>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><a href="#" className="hover:text-white transition-colors">GitHub Repository</a></li>
+            <li><a href="https://github.com/priyanshukannaujiya" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub Repository</a></li>
             <li><a href="#" className="hover:text-white transition-colors">AWS Architecture</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Model Context Protocol</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Apache Airflow DAGs</a></li>
@@ -29,7 +29,7 @@ const Footer = () => {
         <div>
           <h4 className="font-bold mb-4 uppercase text-sm text-gray-300 tracking-wider">Connect</h4>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/priyanshu-premchand-kannaujiya-355346262/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Portfolio</a></li>
             <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
           </ul>
