@@ -48,6 +48,8 @@ const Home = () => {
       <main className="flex-grow w-full px-4 sm:px-6 lg:px-8 py-10 max-w-article mx-auto">
         <ArticleHeader />
         
+        <AboutAuthor />
+        
         <article className="prose prose-lg max-w-none prose-blue">
           
           <Section title="Overview">
@@ -385,8 +387,6 @@ ORDER BY total_revenue DESC;`}
               data={techStackData} 
             />
           </Section>
-
-          <AboutAuthor />
 
         </article>
       </main>
