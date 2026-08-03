@@ -6,6 +6,7 @@ import Section from '../components/Section';
 import TechTable from '../components/TechTable';
 import CodeBlock from '../components/CodeBlock';
 import Footer from '../components/Footer';
+import AboutAuthor from '../components/AboutAuthor';
 
 // Use placeholder paths for development, will be replaced with actual image assets later
 import architectureImg from '../assets/architecture.png';
@@ -384,6 +385,8 @@ ORDER BY total_revenue DESC;`}
               data={techStackData} 
             />
           </Section>
+
+          <AboutAuthor />
 
         </article>
       </main>
