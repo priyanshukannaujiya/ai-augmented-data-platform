@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-darkNavbar: #1a1a1a;
+}
+
+@layer base {
+  body {
+    background-color: #ffffff;
+    color: #111827;
+    font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #111827;
+    letter-spacing: -0.025em;
+  }
+}
+
+@layer utilities {
+  .max-w-article {
+    max-width: 1200px;
+  }
+}
